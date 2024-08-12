@@ -62,3 +62,8 @@ print(bool("1"))  # int轉bool
 print(bool("0"))  # int轉bool
 print(str(123))  # int轉str
 print(str(123.456))  # float轉str
+
+# input 在終端機輸入
+a = int(input("請輸入園的半徑: "))  # 園的半徑
+a = a**2  # 園的面積
+print(a)  # 園的面積

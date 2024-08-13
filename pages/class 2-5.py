@@ -30,3 +30,17 @@ for i in L:
     print(i)
 
 #:: = range
+
+# 改變陣列元素的資料
+
+# call by value
+a = [1, 2, 3]
+b = a
+b[0] = 2
+print(a, b)  # 2, 2, 3 因為a跟b指向同一個陣列，所以改變b的元素會影響a
+
+# call by reference
+a = [1, 2, 3]
+b = a.copy()
+b[0] = 2
+print(a, b)  # 1, 2, 3 因為a跟b指向不同的陣列，所以改變b的元素會不會影響a

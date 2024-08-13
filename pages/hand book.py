@@ -14,4 +14,4 @@ for f in files_name:  # 逐一讀取所有.md檔
     with open(folderPath + "/" + f, "r", encoding="utf-8") as files:  # 讀取檔案
         content = files.read()  # 讀取檔案內容
     with st.expander(f[:-3]):  # 使用expander，標題為檔案名稱去掉.md
-        st.expande(content)  # 將檔案內容加入到expander中
+        st.expander(content)  # 將檔案內容加入到expander中

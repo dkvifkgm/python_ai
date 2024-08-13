@@ -25,8 +25,10 @@ else:
 
 st.markdown("---")
 
-st.title("按鈕練習")
-st.buttle("按我一下,key=1")
-st.buttle("按我二下,key=2")
+st.markdown("###按鈕練習")
+st.buttle("按我一下", key="button1")
+if st.button("按我一下", key="button2"):
+    st.snow
+st.buttle("按我三下", key="button3")
 
 st.markdown("---")

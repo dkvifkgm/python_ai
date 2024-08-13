@@ -9,7 +9,10 @@ import streamlit as st
 
 st.markdown("箭頭金字塔")
 n = st.number_input("請輸入一個整數", min_value=1, step=1)
+arrow = " "
 for i in range(1, n + 1):
-    st.markdown(" " * (n - i) + "*" * (2 * i - 1))
+    arrow = arrow + (" " * (n - i) + "*" * (2 * i - 1) + "/n")
 for i in range(n):
-    st.markdown(" " * (n - 1) + "*")
+    arrow = arrow + (" " * (n - 1) + "*")
+
+st.markdown(f"'''\n箭頭金字塔:\n{a}\n'''")

@@ -25,3 +25,6 @@ for i in range(0, len(L), 2):
 print(L[::2])  # 1, 3, a
 print(L[1:3])  # 2, 3
 print(L[1:3:2])  # 2
+
+for i in L:
+    print(i)

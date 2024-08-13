@@ -28,3 +28,5 @@ print(L[1:3:2])  # 2
 
 for i in L:
     print(i)
+
+#:: = range

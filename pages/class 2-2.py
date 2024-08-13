@@ -6,7 +6,9 @@ import streamlit as st
 st.title("練習")
 st.write("請輸入你的成績")
 number = st.number_input("請輸入一個數字", min_value=0, max_value=100)
-if number >= 95:
+if number >= 100:
+    st.markdown("你的等級是 A++")
+elif number >= 95:
     st.markdown("你的等級是 A+")
 elif number >= 90:
     st.markdown("你的等級是 A")

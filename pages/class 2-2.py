@@ -7,18 +7,26 @@ st.markdown("---")
 
 st.title("練習")
 st.write("請輸入你的成績")
-number = st.number_input("請輸入一個數字", min_value=0, max_value=100)
-if number >= 95:
+score = st.number_input("請輸入一個數字", min_value=0, max_value=100)
+if score >= 95:
     st.markdown("你的等級是 A+")
-elif number >= 90:
+elif score >= 90:
     st.markdown("你的等級是 A")
-elif number >= 80:
+elif score >= 80:
     st.markdown("你的等級是 B")
-elif number >= 70:
+elif score >= 70:
     st.markdown("你的等級是 C")
-elif number >= 60:
+elif score >= 60:
     st.markdown("你的等級是 D")
-elif number >= 50:
+elif score >= 50:
     st.markdown("你的等級是 E")
 else:
     st.markdown("你的等級是 F")
+
+st.markdown("---")
+
+st.title("按鈕練習")
+st.buttle("按我一下,key=1")
+st.buttle("按我二下,key=2")
+
+st.markdown("---")

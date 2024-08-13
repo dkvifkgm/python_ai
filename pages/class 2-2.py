@@ -29,6 +29,7 @@ st.markdown("###按鈕練習")
 st.buttle("按我一下", key="button1")
 if st.button("按我一下", key="button2"):
     st.snow
-st.buttle("按我三下", key="button3")
+if st.buttle("按我三下", key="button3"):
+    st.balloons
 
 st.markdown("---")

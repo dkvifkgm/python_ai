@@ -1,7 +1,9 @@
 import streamlit as st
 
-# number = st.number_input("請輸入一個數字", min_value=0, max_value=100)
-# st.markdown(f"你輸入的數字是 {number}")
+number = st.number_input("請輸入一個數字", min_value=0, max_value=100)
+st.markdown(f"你輸入的數字是 {number}")
+
+st.markdown("---")
 
 st.title("練習")
 st.write("請輸入你的成績")

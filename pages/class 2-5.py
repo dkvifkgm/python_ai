@@ -43,4 +43,30 @@ print(a, b)  # 2, 2, 3 因為a跟b指向同一個陣列，所以改變b的元素
 a = [1, 2, 3]
 b = a.copy()
 b[0] = 2
-print(a, b)  # 1, 2, 3 因為a跟b指向不同的陣列，所以改變b的元素會不會影響a
+print(a, b)  # 複製a的值給b，所以a跟b指向不同的陣列，因此b的元素不會影響a
+
+# append
+L = [1, 2, 3]
+L.append(4)  # 把4加到L的最後面
+print(L)
+
+# 陣列有兩種移除模式
+# 1.remove  移除指定值
+L = [1, 2, 3, 1]
+L.remove(1)  # removec只會移除最前面的1
+
+#
+# pop 移除指定位置的元素，如果沒有指定就是刪除最後面的元素
+L = [1, 2, 3]
+print(L.pop(0))  # 刪除第一個元素
+print(L.pop())  # 刪除最後一個元素
+
+# extend
+L = [1, 2, 3]
+L.extend([4, 5, 6])
+print(L)
+
+# insert
+L = [1, 2, 3]
+L.insert(1, 4)
+print(L)

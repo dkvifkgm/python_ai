@@ -1,7 +1,8 @@
 import streamlit as st
 
-st.markdown(
-    """ 
+with st.expander("class 1課程筆記"):
+    st.markdown(
+        """ 
 ### 單行註解
 
 ```python
@@ -160,4 +161,4 @@ st.markdown(
 - `Streamlit`: 一個用於建立資料應用的 Python 庫。
 - `st.markdown()`: 使用 Markdown 語法來顯示格式化文本。
 """
-)
+    )

@@ -19,3 +19,18 @@ col3.button("按鈕3", key="7")
 with col1:
     st.button("按鈕1", key="8")
     st.button("按鈕2", key="9")
+
+# 多個column
+cols = st.columns(4)
+for i in range(len(cols)):
+    with cols[i]:
+        st.button(f"按鈕{1+1}", key=f"{i+10}")
+
+st.markdown("---")
+
+st.title("文字輸入元件")
+text = st.text_input("輸入文字", value="這是預設文字")
+st.markdown(f"文字輸入的值為: {text}")
+
+# columns 排列元件效果比較
+col1, col2, col3 = st.columns(2)

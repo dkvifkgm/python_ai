@@ -10,6 +10,8 @@ for f in files:  # 逐一檢查每個檔案
         files_name.append(f)  # 將檔案名稱加入到files_name列表中
 print(files_name)
 
+files_name.sort()  # 從小到大排序
+
 for f in files_name:  # 逐一讀取所有.md檔
     with open(folderPath + "/" + f, "r", encoding="utf-8") as files:  # 讀取檔案
         content = files.read()  # 讀取檔案內容

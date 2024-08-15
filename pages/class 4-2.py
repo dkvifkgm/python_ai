@@ -14,12 +14,13 @@ image_size = st.number_input(
 )  # 取得圖片大小
 # 使用者輸入圖片大小,最小50,最大500,每次取值50,初始值100
 
-for image_file in image_files:  # 顯示所有圖片
-    st.image(
-        f"{image_folder}/{image_file}", width=image_size
-    )  # 顯示圖片 並依照使用者輸入大小調整寬度
+# image_file 會依次取出 image_files 裡面的一個項目（比如檔案名或檔案物件）
+for image_file in image_files:
+    # 顯示圖片 並依照使用者輸入大小調整寬度
+    st.image(f"{image_folder}/{image_file}", width=image_size)
 
-for image_file in image_files:  # 顯示所有圖片
+# image_file 會依次取出 image_files 裡面的一個項目（比如檔案名或檔案物件）
+for image_file in image_files:
     # 除了with,還有use_columns,_width可以使用 會將圖片寬度設為欄寬度
     st.image(f"{image_folder}/{image_file}", use_column_width=True)
     # 顯示圖片 使用欄寬度

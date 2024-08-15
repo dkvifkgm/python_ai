@@ -45,10 +45,10 @@ with cols[0]:
     product_name = st.selectbox("請選擇要補貨的產品", product_name)
 with cols[1]:
     stock = st.number_input("請輸入要補貨的庫存數量", min_value=1, step=1) 
-if st.button("新增庫存",key=1): 
+if st.button("新增庫存",key=1):
     st.session_state.products[product_name]["stock"] += stock #將庫存加到商品的庫存中
     st.success("補貨成功") #跳出補貨成功的訊息
     time.sleep(0.5)
     st.rerun()
-for product_name,details in st.session_state.products.items(): 
+for product_name,details in st.session_state.products.items(): #逐一讀取st.session_state.products裡的資料定存入product_name,details中
     st.write(f"{product_name}: {details['stock']}")  # 印出商品名稱和庫存數量

@@ -64,7 +64,7 @@ def load_openai_api() -> str:
     raise:
         runtimeError: 如果未找到 OPENAI_API 金鑰。
     """
-    openai_api_key = st.secrets.get["OPENAI_API_KEY"]
+    openai_api_key = st.secrets["OPENAI_API_KEY"]
     if not openai_api_key:
         st.error("未找到 OpenAI API 金鑰。")
         st.stop()

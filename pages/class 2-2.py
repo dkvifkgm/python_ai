@@ -1,4 +1,6 @@
 import streamlit as st
+import random
+from utils import set_background
 
 number = st.number_input("請輸入一個數字", min_value=0, max_value=100)
 st.markdown(f"你輸入的數字是 {number}")
@@ -25,5 +27,11 @@ else:
 st.markdown("---")
 
 st.markdown("按鈕練習")
-st.buttle("按我一下")
-st.markdown("---")
+if st.button("按我一下"):
+    random.randint(1, 3)
+    if random.randint(1, 3) == 1:
+        set_background("image/bg.png", width=20, position="left bottom")
+    elif random.randint(1, 3) == 2:
+        set_background("image/bg.png", width=20, position="center bottom")
+    else:
+        set_background("image/bg.png", width=20, position="right bottom")
